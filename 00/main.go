@@ -13,8 +13,12 @@ type User struct {
 }
 
 func main() {
+
+	s := "the long string"
+	i := 10
 	fmt.Println("Hello, World!")
 	fmt.Println("Hello, World! 2")
 	message := greetings.Hello("Gladys")
-	fmt.Println(message)
+	fmt.Println(message, " + ", s, " and ", i)
+	fmt.Printf("Same thing, but by Printf: %s %d\n", s, i)
 }
